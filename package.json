@@ -1,0 +1,31 @@
+{
+  "name": "medical",
+  "version": "1.0.0",
+  "description": "MediTrack full-stack app",
+  "main": "index.js",
+  "scripts": {
+    "server": "node backend/server.js",
+    "server:dev": "nodemon backend/server.js",
+    "client": "cd frontend && npm start",
+    "dev": "concurrently \"npm:server:dev\" \"npm:client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "googleapis": "^155.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^5.9.2",
+    "mongoose": "^7.6.3",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.13"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.0"
+  }
+}
